@@ -4,49 +4,32 @@ using System;
 
 public class PlayerMobility : MonoBehaviour {
 
+	public float turnSpeed;
 	public float speed;
-	private Animator animCtrl;
-	private bool dead;
-	private bool walk;  
-
-	void Start() {
-		animCtrl = GetComponent<Animator>();
-		walk = false;
-		dead = false;
-	}
+	public KeyCode leftKey = KeyCode.A;
+	public KeyCode rightKey = KeyCode.D;
+	public KeyCode jumpKey = KeyCode.Space;
+	public float jumpForce;
+	private Boolean midair = false;
 
 	void FixedUpdate() {
-		var mousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-		Quaternion rot = Quaternion.LookRotation (transform.position - mousePosition, Vector3.forward);
-		transform.rotation = rot;
-		transform.eulerAngles = new Vector3 (0, 0, transform.eulerAngles.z);
-		rigidbody2D.angularVelocity = 0;
-
-		/*float input = Input.GetAxis ("Vertical");
-		rigidbody2D.AddForce (gameObject.transform.up * speed * input);*/
-
-		if (Input.GetKey (KeyCode.W)) {
-			var dif = (mousePosition - transform.position);
-			if (Math.Abs(dif.x) > 0.1f || Math.Abs(dif.y) > 0.1f){
-				rigidbody2D.AddForce (gameObject.transform.up * speed);
+		Vector3 vel = transform.forward * speed;
+		rigidbody.angularVelocity = new Vector3 (0, 0, 0);
+		rigidbody.velocity = new Vector3 (vel.x, rigidbody.velocity.y, vel.z);
+		
+		if (Input.GetKey (leftKey)) {
+			transform.Rotate (-Vector3.up * turnSpeed * Time.deltaTime);
+		} else if (Input.GetKey (rightKey)) {
+			transform.Rotate (Vector3.up * turnSpeed * Time.deltaTime);
+		} else if (Input.GetKey (jumpKey)) {
+			if(!midair) {
+				rigidbody.AddForce(new Vector3(0f, jumpForce, 0f));
+				midair = true;
 			}
-			walk = true;
-			animCtrl.SetBool ("walk", true);
-		} else if(Input.GetKey(KeyCode.A)) {
-			rigidbody2D.AddForce(-gameObject.transform.right * speed);
-			walk = true;
-			animCtrl.SetBool ("walk", true);
-		} else if(Input.GetKey(KeyCode.S)) {
-			rigidbody2D.AddForce(-gameObject.transform.up * 0.7f * speed);
-			walk = true;
-			animCtrl.SetBool ("walk", true);
-		} else if(Input.GetKey(KeyCode.D)) {
-			rigidbody2D.AddForce(gameObject.transform.right * speed);
-			walk = true;
-			animCtrl.SetBool ("walk", true);
-		} else {
-			walk = false;
-			animCtrl.SetBool ("walk", false);
 		}
+	}
+
+	void OnCollisionEnter(Collision col) {
+		midair = false;
 	}
 }
