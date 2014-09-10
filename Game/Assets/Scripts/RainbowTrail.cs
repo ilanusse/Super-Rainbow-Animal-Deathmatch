@@ -12,7 +12,7 @@ public class RainbowTrail : MonoBehaviour
 	private float sliceTime;
 	private RaycastHit hit;
 	public GameObject player;
-	
+
 	void  Start (){
 		sliceTime = 1.0f / rate;
 		arv3 = new Vector3[(Mathf.RoundToInt(time * rate) + 1)];
@@ -37,7 +37,6 @@ public class RainbowTrail : MonoBehaviour
 	void  Update (){
 		if (Hit ()) {
 			Destroy(hit.collider.gameObject);
-			Debug.Log ("I hit: " + hit.collider.name);
 		}
 	}
 	
