@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMobility.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RainbowTrail.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerMobility.cs" Line="12" Column="7" />
-      <File FileName="Assets\Scripts\RainbowTrail.cs" Line="6" Column="41" />
+      <File FileName="Assets\Scripts\PlayerMobility.cs" Line="18" Column="5" />
+      <File FileName="Assets\Scripts\RainbowTrail.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerMobility.cs" Line="36" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

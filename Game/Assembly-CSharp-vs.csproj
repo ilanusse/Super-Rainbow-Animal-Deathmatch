@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\PlayerMobility.cs" />
      <Compile Include="Assets\Scripts\RainbowTrail.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
