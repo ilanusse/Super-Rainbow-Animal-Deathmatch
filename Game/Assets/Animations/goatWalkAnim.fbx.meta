@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: 2bea2c6666bd01a44a948eaf3bf31f01
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature|Armature
+    100004: Armature|Back_Calf_L
+    100006: Armature|Back_Calf_R
+    100008: Armature|Back_Foot_L
+    100010: Armature|Back_Foot_R
+    100012: Armature|Back_Thigh_L
+    100014: Armature|Back_Thigh_R
+    100016: Armature|Back_Toe_L
+    100018: Armature|Back_Toe_R
+    100020: Armature|Ear_01_L
+    100022: Armature|Ear_01_R
+    100024: Armature|Ear_02_L
+    100026: Armature|Ear_02_R
+    100028: Armature|Front_Calf_L
+    100030: Armature|Front_Calf_R
+    100032: Armature|Front_Foot_L
+    100034: Armature|Front_Foot_R
+    100036: Armature|Front_Thigh_L
+    100038: Armature|Front_Thigh_R
+    100040: Armature|Front_Toe_L
+    100042: Armature|Front_Toe_R
+    100044: Armature|Head
+    100046: Armature|Jaw_01
+    100048: Armature|Jaw_02
+    100050: Armature|Neck
+    100052: Armature|pelvis
+    100054: Armature|Root
+    100056: Armature|Spine_01
+    100058: Armature|Spine_02
+    100060: Armature|Tail_01
+    100062: Armature|Tail_02
+    100064: Armature|Tongue_01
+    100066: Armature|Tongue_02
+    100068: Armature|Tongue_03
+    100070: Armature|Tongue_04
+    100072: goat
+    100074: //RootNode
+    400000: Armature
+    400002: Armature|Armature
+    400004: Armature|Back_Calf_L
+    400006: Armature|Back_Calf_R
+    400008: Armature|Back_Foot_L
+    400010: Armature|Back_Foot_R
+    400012: Armature|Back_Thigh_L
+    400014: Armature|Back_Thigh_R
+    400016: Armature|Back_Toe_L
+    400018: Armature|Back_Toe_R
+    400020: Armature|Ear_01_L
+    400022: Armature|Ear_01_R
+    400024: Armature|Ear_02_L
+    400026: Armature|Ear_02_R
+    400028: Armature|Front_Calf_L
+    400030: Armature|Front_Calf_R
+    400032: Armature|Front_Foot_L
+    400034: Armature|Front_Foot_R
+    400036: Armature|Front_Thigh_L
+    400038: Armature|Front_Thigh_R
+    400040: Armature|Front_Toe_L
+    400042: Armature|Front_Toe_R
+    400044: Armature|Head
+    400046: Armature|Jaw_01
+    400048: Armature|Jaw_02
+    400050: Armature|Neck
+    400052: Armature|pelvis
+    400054: Armature|Root
+    400056: Armature|Spine_01
+    400058: Armature|Spine_02
+    400060: Armature|Tail_01
+    400062: Armature|Tail_02
+    400064: Armature|Tongue_01
+    400066: Armature|Tongue_02
+    400068: Armature|Tongue_03
+    400070: Armature|Tongue_04
+    400072: goat
+    400074: //RootNode
+    4300000: goat
+    7400000: Armature|ArmatureAction
+    9500000: //RootNode
+    13700000: goat
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
