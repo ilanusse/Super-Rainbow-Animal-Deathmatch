@@ -12,6 +12,7 @@ public class RainbowTrail : MonoBehaviour
 	private float sliceTime;
 	private RaycastHit hit;
 	public GameObject player;
+	public GameObject explosion;
 
 	void  Start (){
 		sliceTime = 1.0f / rate;
@@ -25,7 +26,7 @@ public class RainbowTrail : MonoBehaviour
 	
 	IEnumerator CollectData (){
 		while (true) {
-			if (player.transform.position != arv3[head]) {
+			if (player != null && player.transform.position != arv3[head]) {
 				head = (head + 1) % arv3.Length;
 				tail = (tail + 1) % arv3.Length;
 				arv3[head] = player.transform.position;
@@ -37,6 +38,7 @@ public class RainbowTrail : MonoBehaviour
 	void  Update (){
 		if (Hit ()) {
 			Destroy(hit.collider.gameObject);
+			Instantiate(explosion, hit.transform.position, Quaternion.identity);
 		}
 	}
 	

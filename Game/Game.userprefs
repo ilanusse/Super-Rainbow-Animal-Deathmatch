@@ -1,14 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ClosePopup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RainbowTrail.cs">
     <Files>
-      <File FileName="Assets\Scripts\RainbowTrail.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerMobility.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MenuPlay.cs" Line="7" Column="24" />
+      <File FileName="Assets\Detonator Explosion Framework\System\DetonatorSound.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\RainbowTrail.cs" Line="40" Column="15" />
+      <File FileName="Assets\Scripts\PlayerMobility.cs" Line="43" Column="2" />
+      <File FileName="Assets\Scripts\MenuPlay.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CloseablePopup.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Pause.cs" Line="11" Column="40" />
-      <File FileName="Assets\Scripts\PauseMenu.cs" Line="8" Column="24" />
-      <File FileName="Assets\Scripts\ClosePopup.cs" Line="8" Column="19" />
+      <File FileName="Assets\Scripts\Pause.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PauseMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ClosePopup.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GoToMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Detonator Explosion Framework\System\DetonatorSound.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
