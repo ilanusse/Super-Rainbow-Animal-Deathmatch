@@ -10,6 +10,7 @@ public class PlayerMobility : MonoBehaviour {
 	public KeyCode rightKey = KeyCode.D;
 	public KeyCode jumpKey = KeyCode.Space;
 	public float jumpForce;
+	public Animator anim;
 	private Boolean midair = false;
 
 	void FixedUpdate() {
@@ -26,6 +27,8 @@ public class PlayerMobility : MonoBehaviour {
 		}
 		if (Input.GetKey (jumpKey)) {
 			if(!midair) {
+				anim.SetBool("jump", true);
+				anim.SetBool("grounded", false);
 				rigidbody.AddForce(new Vector3(0f, jumpForce, 0f));
 				midair = true;
 			}
@@ -33,6 +36,8 @@ public class PlayerMobility : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col) {
+		anim.SetBool("grounded", true);
+		anim.SetBool("jump", false);
 		midair = false;
 	}
 }
