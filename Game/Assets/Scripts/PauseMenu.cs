@@ -3,18 +3,21 @@ using System.Collections;
 
 public class PauseMenu : MonoBehaviour {
 
+	public AudioSource audio;
+
 	// Use this for initialization
 	void Start () {
 		gameObject.SetActive (false);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	public void unpause() {
+		audio.Play ();
 		Time.timeScale = 1;
 		gameObject.SetActive(false);
+	}
+
+	public void retry() {
+		unpause ();
+		Application.LoadLevel(Application.loadedLevel);
 	}
 }

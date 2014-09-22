@@ -11,8 +11,9 @@ public class RainbowTrail : MonoBehaviour
 	private int tail= 0;
 	private float sliceTime;
 	private RaycastHit hit;
-	public GameObject player;
+	public Player player;
 	public GameObject explosion;
+	public FinishManager fm;
 
 	void  Start (){
 		sliceTime = 1.0f / rate;
@@ -39,6 +40,17 @@ public class RainbowTrail : MonoBehaviour
 		if (Hit ()) {
 			Destroy(hit.collider.gameObject);
 			Instantiate(explosion, hit.transform.position, Quaternion.identity);
+			int playerNum; 
+			if (hit.collider.gameObject.Equals(player.gameObject)) {
+				if(player.getPlayerNum() == 1 ) {
+					playerNum = 2;
+				} else {
+					playerNum = 1;
+				}
+			} else {
+				playerNum = player.getPlayerNum();
+			}
+			fm.finish(playerNum);
 		}
 	}
 	

@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class PlayerMobility : MonoBehaviour {
+public class Player : MonoBehaviour {
 
 	public float turnSpeed;
 	public float speed;
@@ -12,6 +12,8 @@ public class PlayerMobility : MonoBehaviour {
 	public float jumpForce;
 	public Animator anim;
 	private Boolean midair = false;
+	public int playerNum;
+	public AudioClip sound;
 
 	void FixedUpdate() {
 		Vector3 vel = transform.forward * speed;
@@ -27,6 +29,8 @@ public class PlayerMobility : MonoBehaviour {
 		}
 		if (Input.GetKey (jumpKey)) {
 			if(!midair) {
+				audio.clip = sound;
+				audio.Play();
 				anim.SetBool("jump", true);
 				anim.SetBool("grounded", false);
 				rigidbody.AddForce(new Vector3(0f, jumpForce, 0f));
@@ -39,5 +43,9 @@ public class PlayerMobility : MonoBehaviour {
 		anim.SetBool("grounded", true);
 		anim.SetBool("jump", false);
 		midair = false;
+	}
+
+	public int getPlayerNum() {
+		return playerNum;
 	}
 }

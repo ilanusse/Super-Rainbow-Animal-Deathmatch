@@ -65,12 +65,13 @@
      <Compile Include="Assets\Detonator Explosion Framework\TestScene\TouchToMouse.cs" />
      <Compile Include="Assets\Scripts\ClosePopup.cs" />
      <Compile Include="Assets\Scripts\CloseablePopup.cs" />
+     <Compile Include="Assets\Scripts\FinishManager.cs" />
      <Compile Include="Assets\Scripts\GoToMenu.cs" />
      <Compile Include="Assets\Scripts\MenuPlay.cs" />
      <Compile Include="Assets\Scripts\OpenPopup.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\Scripts\PlayerMobility.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\RainbowTrail.cs" />
      <None Include="Assets\Shaders\AlphaSelfIllum.shader" />
      <None Include="Assets\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
