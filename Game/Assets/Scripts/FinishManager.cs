@@ -3,8 +3,9 @@ using System.Collections;
 
 public class FinishManager : MonoBehaviour {
 
-	public OpenPopup player1Wins;
-	public OpenPopup player2Wins;
+	public PlayerEnd player1End;
+	public PlayerEnd player2End;
+	public GameObject generalEnd;
 	public GameObject player1;
 	public GameObject player2;
 	public GameObject explosion;	
@@ -17,10 +18,13 @@ public class FinishManager : MonoBehaviour {
 			done = true;
 			Invoke ("stopTime", endTime); 
 			if (player == 1) {
-				player1Wins.openPopup ();
+				player1End.win();
+				player2End.lose();
 			} else {
-				player2Wins.openPopup ();
+				player1End.lose();
+				player2End.win();
 			}
+			generalEnd.SetActive(true);
 		}
 	}
 
